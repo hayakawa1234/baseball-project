@@ -2,7 +2,7 @@
   <div class="header-container">
     <v-col md="12" align="center">
       <div class="toolber-container">
-        <v-toolbar color="white" height="75px">
+        <v-toolbar color="white" height="120px">
           <div class="header-menu">
             <div class="title-area">
               <span>baseballProject</span>

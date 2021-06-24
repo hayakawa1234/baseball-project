@@ -56,20 +56,15 @@ export default {};
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    img {
-      z-index: 0 !important;
-    }
   }
   .koshien-img {
-    margin-top: 120px;
-    z-index: 0 !important;
+    margin-top: 150px;
   }
   .baseball-img {
-    margin-top: 120px;
-    z-index: 0 !important;
+    margin-top: 150px;
   }
   .title-area {
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: 100px;
     h2 {
       color: #bdbdbd !important;
@@ -78,7 +73,6 @@ export default {};
   }
   .gloves-img {
     margin-top: 150px;
-    z-index: 0 !important;
   }
 }
 .koshien-img {
