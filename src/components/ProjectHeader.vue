@@ -77,7 +77,9 @@ export default {
 
 <style lang="scss">
 .header-container {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   .title-area {
     display: inline-block;
     text-align: center;
