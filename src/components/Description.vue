@@ -1,35 +1,35 @@
 <template>
   <div class="contents-area">
     <div class="sns-description">
-      <v-card height="400px" width="400px">
+      <v-card height="400px">
         <div>
           <strong>は交流できる<br />SNSサイトです。</strong>
         </div>
       </v-card>
     </div>
     <div class="team-description">
-      <v-card height="400px" width="400px">
+      <v-card height="400px">
         <div>
           <strong>は交流できる<br />SNSサイトです。</strong>
         </div>
       </v-card>
     </div>
     <div class="search-description">
-      <v-card height="400px" width="400px">
+      <v-card height="400px">
         <div>
           <strong>は交流できる<br />SNSサイトです。</strong>
         </div>
       </v-card>
     </div>
     <div class="facility-description">
-      <v-card height="400px" width="400px">
+      <v-card height="400px">
         <div>
           <strong>は交流できる<br />SNSサイトです。</strong>
         </div>
       </v-card>
     </div>
     <div class="all-description">
-      <v-card height="400px" width="400px">
+      <v-card height="400px">
         <div>
           <strong>は交流できる<br />SNSサイトです。</strong>
         </div>

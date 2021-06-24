@@ -1,5 +1,6 @@
 <template>
   <div class="slide-area">
+    <div class="left-slide">
     <template>
       <v-carousel>
         <v-carousel-item
@@ -11,6 +12,20 @@
         ></v-carousel-item>
       </v-carousel>
     </template>
+    </div>
+    <div class="right-slide">
+    <template>
+      <v-carousel>
+        <v-carousel-item
+          v-for="(item, i) in items"
+          :key="i"
+          :src="item.src"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        ></v-carousel-item>
+      </v-carousel>
+    </template>
+    </div>
   </div>
 </template>
 
@@ -20,16 +35,16 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: require("@/assets/allStar.jpeg"),
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          src: require("@/assets/atBat.jpeg"),
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          src: require("@/assets/set.png"),
         },
         {
-          src: require("@/assets/baseball.jpeg"),
+          src: require("@/assets/memories.jpeg"),
         },
       ],
     };
@@ -39,6 +54,16 @@ export default {
 
 <style lang="scss">
 .slide-area {
-  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .left-slide {
+    width: 350px;
+    margin-top: 50px;
+  }
+  .right-slide {
+    width: 350px;
+    margin-top: 50px;
+  }
 }
 </style>
