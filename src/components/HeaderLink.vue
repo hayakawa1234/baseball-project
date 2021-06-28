@@ -12,7 +12,7 @@
     </div>
     <div class="myteam-link" v-show="!myteamFlag">
       <router-link to="/myTeam">
-        <span>MyTeam</span>
+        <span>Friends</span>
       </router-link>
     </div>
     <div class="facility-link" v-show="!facilityFlag">
@@ -22,7 +22,7 @@
     </div>
     <div class="team-search-link" v-show="!searchFlag">
       <router-link to="/teamSeach">
-        <span>TeamSearch</span>
+        <span>Search</span>
       </router-link>
     </div>
   </div>

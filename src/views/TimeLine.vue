@@ -1,15 +1,20 @@
 <template>
+<div>
   <div class="home-container">
     <PostFrame />
   </div>
+  <Footer />
+</div>
 </template>
 
 <script>
 import PostFrame from "@/components/PostFrame.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "TimeLine",
   components: {
-    PostFrame
+    PostFrame,
+    Footer
   }
 };
 </script>
