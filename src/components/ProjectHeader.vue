@@ -5,7 +5,7 @@
         <v-toolbar color="white" height="120px">
           <div class="header-menu">
             <div class="title-area">
-              <span>baseballProject</span>
+              <span>Smaple_SNS_Project</span>
             </div>
             <div class="hamburger-menu">
               <HamburgerMenu v-show="hamburgerMenuFlag" />

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app>
-        <ProjectHeader />
+      <ProjectHeader />
       <div>
         <router-view />
       </div>
@@ -11,8 +11,9 @@
 
 <script>
 import ProjectHeader from "@/components/ProjectHeader.vue";
+
 export default {
-  components: { ProjectHeader },
+  components: { ProjectHeader }
 };
 </script>
 

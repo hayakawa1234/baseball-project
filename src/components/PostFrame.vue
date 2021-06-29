@@ -1,87 +1,85 @@
 <template>
-  <div class="mein-img">
-    <div class="title-area"></div>
-    <div class="img-area">
-      <div class="koshien-area">
+  <div class="timeline">
+    <div class="post-area">
+      <div v-for="member in members" :key="member.id">
         <div class="userPosts">
           <div class="userinfo-section">
-            <div class="icon">
-              <img src="../assets/icon.png" width="30px" height="30px" />
+            <img class="icon" :src="member.icon" width="100%" height="100%" />
+            <div class="userInfo">
+              <span>{{member.user}}</span>
             </div>
             <div class="userInfo">
-              <span>UserName</span>
-            </div>
-            <div class="userInfo">
-              <span>UserId</span>
+              <span>{{member.id}}</span>
             </div>
           </div>
-          <div class="img-section">
-            <img src="../assets/noimage2.jpg" width="600px" max-height="auto" />
-          </div>
-          <div
-            class="comment"
-          >CommentCommentCommentCommentCommentCommentCommentCommentComaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-        </div>
-        <div class="userPosts">
-          <div class="userinfo-section">
-            <div class="icon">
-              <img src="../assets/icon.png" width="30px" height="30px" />
-            </div>
-            <div class="userInfo">
-              <span>UserName</span>
-            </div>
-            <div class="userInfo">
-              <span>UserId</span>
-            </div>
-          </div>
-          <div class="img-section">
-            <img src="../assets/icon.png" width="600px" height="auto" />
-          </div>
-          <div
-            class="comment"
-          >CommentCommentCommentCommentCommentCommentCommentCommentComaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
-        </div>
-        <div class="userPosts">
-          <div class="userinfo-section">
-            <div class="icon">
-              <img src="../assets/icon.png" width="30px" height="30px" />
-            </div>
-            <div class="userInfo">
-              <span>UserName</span>
-            </div>
-            <div class="userInfo">
-              <span>UserId</span>
-            </div>
-          </div>
-          <div class="img-section">
-            <img src="../assets/uma-4.jpg" width="600px" height="auto" />
-          </div>
-          <div
-            class="comment"
-          >CommentCommentCommentCommentCommentCommentCommentCommentComaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+          <img class="img-section" :src="member.picture" width="100%" height="100%" />
+          <div class="comment">{{member.comment}}</div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {};
+<script >
+export default { 
+  data() {
+    return {
+      members: [
+        {
+          user: "userOne",
+          id: "id0001",
+          icon: require("../assets/icon.png"),
+          picture: require("../assets/uma-4.jpg"),
+          comment:
+            "CommentCommentCommentCommentCommentCommentCommentCommentComaaaaaaa"
+        },
+        {
+          user: "userTwo",
+          id: "id0002",
+          icon: require('../assets/icon.png'),
+          comment:
+            "CommentCommentComment"
+        },
+        {
+          user: "userThree",
+          id: "id0003",
+          icon: require('../assets/icon.png'),
+          picture: require('../assets/mcqueen.jpg'),
+          comment:
+            "CommentCommentComment"
+        },
+        {
+          user: "userFour",
+          id: "id0004",
+          icon: require('../assets/icon.png'),
+          picture: require('../assets/noimage2.jpg'),
+          comment:
+            "CommentCommentComment"
+        }
+      ]
+    };
+  }
+};
+
+
 </script>
 
 <style lang="scss">
-.mein-img {
-  .title-area {
-    margin-top: 100px;
+.timeline {
+  .post-area {
+    text-align: center;
+    margin-top: 130px;
+    display: block;
   }
   .userinfo-section {
-    margin-top: 40px;
     justify-content: flex-start;
+    margin-bottom: 5px;
     display: flex;
-    width: 90%;
   }
   .icon {
     position: relative;
+    width: 30px;
+    height: 30px;
   }
   .userInfo {
     margin-left: 10px;
@@ -95,12 +93,20 @@ export default {};
     word-break: break-all;
     font-size: 20px;
     font: bold;
+    text-align: left;
   }
   .img-section {
     text-align: center;
   }
   .userPosts {
-    position: relative;
+    /*background: #cfd8dc ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     max-width: 600px;
   }
 }
