@@ -5,6 +5,7 @@ import MyTeam from './views/MyTeam.vue'
 import Facility from './views/Facility.vue'
 import TeamSearch from './views/TeamSearch.vue'
 import TimeLine from './views/TimeLine.vue'
+import CreatePost from './views/CreatePost.vue'
 import MemberDetail from './views/MemberDetail'
 
 Vue.use(VueRouter)
@@ -37,6 +38,11 @@ export default new VueRouter({
       path: '/timeLine',
       name: 'timeLine',
       component: TimeLine
+    },
+    {
+      path: '/createpost',
+      name: 'createpost',
+      component: CreatePost
     },
     {
       path: '/myTeam/memberDetail',
