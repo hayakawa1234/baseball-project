@@ -1,6 +1,6 @@
 <template>
   <div class="contents-area">
-    <div class="sns-description">
+    <div class="sns-description" data-delighter>
       <v-card height="400px">
         <div>
           <strong>は交流できる<br />SNSサイトです。</strong>
@@ -68,4 +68,22 @@ export default {};
     margin-bottom: 30px;
   }
 }
+
+/* 基本のスタイル */
+   .sns-description .delighter {
+      transition: all .3s ease-out;
+      transform: translateX(-100%);
+      opacity: 0;
+   }
+ 
+/* スタート時のスタイル */
+   .sns-description .delighter.started {
+      transform: none;
+      opacity: 1;
+   }
+ 
+/* エンド時のスタイル */
+   .sns-description .delighter.started.ended {
+      border: solid red 10px;
+   }
 </style>

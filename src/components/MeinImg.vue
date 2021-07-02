@@ -3,22 +3,7 @@
     <div class="img-area">
       <div class="koshien-area">
         <div class="koshien-img">
-          <img src="../assets/koshien.png" width="450px" height="300px" />
-          <div class="memory">
-            <span>Memory</span>
-          </div>
-          <div class="record">
-            <span>Record</span>
-          </div>
-          <div class="manegement">
-            <span>Manegement</span>
-          </div>
-          <div class="exchange">
-            <span>Exchange</span>
-          </div>
-          <div class="sns">
-            <span>SNS</span>
-          </div>
+          <img src="../assets/koshien.png" />
         </div>
       </div>
       <div class="gloves-area">
@@ -59,6 +44,11 @@ export default {};
   }
   .koshien-img {
     margin-top: 150px;
+    max-width: 500px;
+    max-height: 350px;
+    img {
+      width: 100%;
+    }
   }
   .baseball-img {
     margin-top: 150px;
