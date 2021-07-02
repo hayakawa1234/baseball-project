@@ -1,11 +1,12 @@
 <template>
   <div>
-    <v-footer :v-bind="fixed" :padless="true">
-      <v-card flat tile width="100%" class="red lighten-1 text-center">
+    <v-footer bottom fixed padless>
+      <v-card flat tile width="100%" class="lighten-1 text-center">
         <v-card-text>
           <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
             <v-icon size="24px">{{ icon }}</v-icon>
           </v-btn>
+          <PostButton />
         </v-card-text>
       </v-card>
     </v-footer>
@@ -13,7 +14,11 @@
 </template>
 
 <script>
+import PostButton from "@/components/PostButton.vue";
 export default {
+  components: {
+    PostButton
+  },
   data: () => ({
     icons: ["mdi-home", "mdi-email", "mdi-calendar", "mdi-delete"]
   })

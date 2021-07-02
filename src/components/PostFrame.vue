@@ -31,14 +31,14 @@ export default {
           icon: require("../assets/icon.png"),
           picture: require("../assets/uma-4.jpg"),
           comment:
-            "CommentCommentCommentCommentCommentCommentCommentCommentComaaaaaaa"
+            "桁数がいっぱい桁数がいっぱい桁数がいっぱい桁数がいっぱい桁数がいっぱい桁数がいっぱい桁数がいっぱい桁数がいっぱい桁数がいっぱい"
         },
         {
           user: "userTwo",
           id: "id0002",
           icon: require('../assets/icon.png'),
           comment:
-            "CommentCommentComment"
+            "画像無しの投稿を模したコメント"
         },
         {
           user: "userThree",
@@ -46,15 +46,23 @@ export default {
           icon: require('../assets/icon.png'),
           picture: require('../assets/mcqueen.jpg'),
           comment:
-            "CommentCommentComment"
+            "CommentCommentCommentCommentCommentCommentCommentCommentCommentCommentCommentComment"
         },
         {
           user: "userFour",
           id: "id0004",
           icon: require('../assets/icon.png'),
-          picture: require('../assets/noimage2.jpg'),
+          picture: require('../assets/node-module.png'),
           comment:
             "CommentCommentComment"
+        },
+        {
+          user: "レムリン",
+          id: "id0005",
+          icon: require('../assets/remurinn.jpg'),
+          picture: require('../assets/remurinn.jpg'),
+          comment:
+            "これはレムリン"
         }
       ]
     };
@@ -68,7 +76,7 @@ export default {
 .timeline {
   .post-area {
     text-align: center;
-    margin-top: 130px;
+    margin-bottom: 90px;
     display: block;
   }
   .userinfo-section {
