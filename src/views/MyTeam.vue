@@ -3,7 +3,12 @@
     <v-row>
       <v-col lg="12">
         <div class="img-area">
-          <img src="../assets/memories.jpeg" width="100%" />
+          <div>
+          <img src="../assets/memories.jpeg" width="100%" id="imgData" />
+          </div>
+          <div>
+            <h1>武蔵大学軟式野球部</h1>
+          </div>
         </div>
         <div class="member-table">
           <div class="midasi-table" v-if="!appearVerticalTableFlag">
@@ -153,6 +158,8 @@ export default {
         },
       ],
       appearVerticalTableFlag: false,
+      logoPositionX: 0,
+      logoPositionY: 0
     }
   },
   mounted: function () {
@@ -170,15 +177,16 @@ export default {
       } else if(windowSize >= 580) {
         this.appearVerticalTableFlag = false
       }
-    }
+    },
   }
 };
 </script>
 
 <style lang="scss">
 .myteam-container {
-  margin-top: 150px;
+  margin-top: 130px;
   .img-area {
+    position: relative;
     max-width: 500px;
     min-width: 150px;
     max-height: 380px;
@@ -187,7 +195,7 @@ export default {
   }
   .member-table {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 150px;
   }
   .midasi-table {
     img {
